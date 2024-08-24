@@ -6,30 +6,30 @@ const config: Config = {
     sendWelcomeMessage: true, // Whether to send a welcome message to the user (located at /src/services/welcomeUser.ts)
     models: {
         ChatGPT: {
-            prefix: '!chatgpt', // Prefix for the ChatGPT model
+            prefix: '.chatgpt', // Prefix for the ChatGPT model
             enable: true // Whether the ChatGPT model is enabled or not
         },
         DALLE: {
-            prefix: '!dalle', // Prefix for the DALLE model
+            prefix: '.dalle', // Prefix for the DALLE model
             enable: true // Whether the DALLE model is enabled or not
         },
         StableDiffusion: {
-            prefix: '!stable', // Prefix for the StableDiffusion model
+            prefix: '.stable', // Prefix for the StableDiffusion model
             enable: true // Whether the StableDiffusion model is enabled or not
         },
         GeminiVision: {
-            prefix: '!gemini-vision', // Prefix for the GeminiVision model
+            prefix: '.gemini-vision', // Prefix for the GeminiVision model
             enable: true // Whether the GeminiVision model is enabled or not
         },
         Gemini: {
-            prefix: '!gemini', // Prefix for the Gemini model
+            prefix: '.gemini', // Prefix for the Gemini model
             enable: true // Whether the Gemini model is enabled or not
         },
         Custom: [
             {
                 /** Custom Model */
                 modelName: 'whatsapp-ai-bot', // Name of the custom model
-                prefix: '!bot', // Prefix for the custom model
+                prefix: '.bot', // Prefix for the custom model
                 enable: true, // Whether the custom model is enabled or not
                 /**
                  * context: "file-path (.txt, .text, .md)",
